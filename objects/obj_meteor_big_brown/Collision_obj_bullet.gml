@@ -39,14 +39,4 @@ else
     instance_destroy();
 }
 
-if (instance_exists(obj_player))
-{
-	var _base_score = 100;
-	var _speed = obj_player.speed + 1;
-	var _score = _base_score * _speed;
-
-	show_debug_message("The Player speed is {0}",_speed);
-	show_debug_message("The player scored {0}", _score);
-
-	obj_game.points += _score;
-}
+scr_player_score(100);

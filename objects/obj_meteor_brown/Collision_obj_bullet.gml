@@ -10,6 +10,4 @@ motion_add(image_angle, 0.4);
 
 instance_destroy();
 
-var _score = 25;
-
-obj_game.points += _score;
+scr_player_score(25);
